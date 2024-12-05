@@ -1,0 +1,105 @@
+
+VER "ms"
+#showtooltip
+/cast [worn:shield] Shield Slam; Mortal Strike
+/startattack
+END
+
+VER "dev"
+#showtooltip
+/cast Devastate
+/startattack
+END
+
+VER "rend"
+#showtooltip
+/cast Rend
+/startattack
+END
+
+VER "over"
+#showtooltip Intimidating Shout
+/cast Overpower
+/cancelaura bladestorm
+/startattack
+END
+
+VER "ham"
+#showtooltip Berserker Rage
+/cast Hamstring
+/startattack
+END
+
+VER "roar"
+#showtooltip Intimidating Shout
+/cast Blood Fury
+/cast Thunderous Roar
+END
+
+VER "arms"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Heroic Throw; [mod:ctrl,mod:shift] Storm Bolt; [mod:ctrl] Charge; [mod:alt] Shattering Throw; [mod:shift,target=mouseover,help] Intervene; [mod:shift] Intervene; Pummel
+END
+
+VER "armsF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Heroic Throw; [mod:ctrl,mod:shift,@focus] Storm Bolt; [mod:ctrl,@focus] Charge; [mod:alt] ; [mod:shift,@party1] Intervene; [@focus] Pummel
+END
+
+VER  "block"
+#showtooltip Shield Block
+/equipset pvp1h
+/cast Shield Block
+END
+
+VER "bs"
+#showtooltip 16
+/cast [mod:ctrl] Sharpen Blade; Bladestorm
+/use [nomod] Will of Northrend
+END
+
+VER "col"
+#showtooltip Berserker Rage
+/cast Blood Fury
+/cast Colossus Smash
+/startattack
+END
+
+VER "dis"
+#showtooltip
+/cast [mod:ctrl,@focus] Disarm; [known:Disarm] Disarm; [known:War Banner] War Banner
+END
+
+VER "fearF"
+#showtooltip
+/cast [target=focus] Intimidating Shout
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:alt] Raven Lord; [mod:ctrl] Swift Red Wind Rider; [mod:shift] Traveler's Tundra Mammoth; Swift Brewfest Ram
+/dismount [mounted]
+/cancelaura Hand of Protection
+END
+
+VER "stan"
+#showtooltip
+/cast [mod:shift,form:2] Defensive Stance; [mod:shift] Battle Stance
+/equipset [mod:ctrl] pvp1h; [nomod] pvp2h
+END
+
+VER "war1"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena1] Storm Bolt; [mod:alt,mod:ctrl,@arena1] ; [mod:shift,@arena1] Disarm; [mod:ctrl,@arena1] Charge; [mod:alt,@party1] Intervene; [@arena1] Pummel
+END
+
+VER "war2"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena2] Storm Bolt; [mod:alt,mod:ctrl,@arena2] ; [mod:shift,@arena2] Disarm; [mod:ctrl,@arena2] Charge; [mod:alt,@party2] Intervene; [@arena2] Pummel
+END
+
+VER "war3"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena3] Storm Bolt; [mod:alt,mod:ctrl,@arena3] ; [mod:shift,@arena3] Disarm; [mod:ctrl,@arena3] Charge; [mod:alt,@party3] Intervene; [@arena3] Pummel
+END

@@ -1,0 +1,100 @@
+VER "bindP"
+#showtooltip
+/cast [@player] Binding Shot
+END
+
+VER "bm"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl] ; [mod:ctrl,mod:shift] Scatter Shot; [mod:ctrl] Tranquilizing Shot; [mod:shift] Intimidation; Counter Shot
+END
+
+VER "bmF"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@focus,pet:crab] ; [mod:ctrl,mod:shift,@focus] Scatter Shot; [mod:ctrl,@focus] Tranquilizing Shot; [mod:shift,@focus] Intimidation; [@focus] Counter Shot
+END
+
+VER "call"
+#showtooltip
+/cast [@mouseover,help][mod:shift,@party1][mod:alt,@party2][mod:ctrl,@player][] Master's Call
+END
+
+VER "camo"
+#showtooltip
+/cast !Camouflage
+END
+
+VER "clip"
+#showtooltip
+/cast [mod:ctrl,@focus] Concussive Shot; Concussive Shot
+END
+
+VER "det"
+#showtooltip
+/stopcasting
+/cast [nomod] !Aspect of the Turtle
+/cancelaura [mod:ctrl] Aspect of the Turtle
+END
+
+VER "feign"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl] Feign Death; Disengage
+END
+
+VER "highP"
+#showtooltip
+/cast [@player] High Explosive Trap
+END
+
+VER "hun1"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena1] Scatter Shot; [mod:alt,mod:ctrl,@party1] Roar of Sacrifice; [mod:shift,@arena1] ; [@arena1] Counter Shot
+END
+
+VER "hun2"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena2] Scatter Shot; [mod:alt,mod:ctrl,@party2] Roar of Sacrifice; [mod:shift,@arena2] ; [@arena2] Counter Shot
+END
+
+VER "hun3"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena3] Scatter Shot; [mod:alt,mod:ctrl,@player] Roar of Sacrifice; [mod:shift,@arena3] ; [@arena3] Counter Shot
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:alt] Swift Red Wind Rider; [mod:ctrl] Cenarion War Hippogryph; [mod:shift] Traveler's Tundra Mammoth; Core Hound
+/dismount [mounted]
+END
+
+VER "pet"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Call Pet 4; [mod:shift] Dismiss Pet; [mod:ctrl] Call Pet 2; [mod:alt] Call Pet 3; [nopet] Call Pet 1; [@pet,dead] Revive Pet; [pet] Mend Pet
+END
+
+VER "surv"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl] Tracker's Net;  [mod:ctrl,mod:shift] Scatter Shot; [mod:ctrl] Tranquilizing Shot; [mod:shift] Harpoon; Muzzle
+END
+
+VER "survF"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@focus] Tracker's Net; [mod:ctrl,mod:shift,@focus] Scatter Shot; [mod:ctrl,@focus] Tranquilizing Shot; [mod:shift,@focus] Harpoon; [@focus] Muzzle
+END
+
+VER "trap"
+#showtooltip
+/cast [mod:shift] Tar Trap; [mod:alt,@player] Tar Trap; [mod:ctrl,@player] Freezing trap; Freezing Trap
+END
+
+VER "wrath"
+#showtooltip
+/cast Bestial Wrath
+/cast Berserking
+/use 13
+END

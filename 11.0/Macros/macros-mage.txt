@@ -1,0 +1,70 @@
+VER "block"
+#showtooltip
+/stopcasting
+/cast !Ice Block
+END
+
+VER "cs"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl] Polymorph(Turtle); [mod:ctrl,mod:shift]; [mod:ctrl] Spellsteal; [mod:shift] ; Counterspell
+END
+
+VER "csF"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@focus] Polymorph(Black Cat); [mod:ctrl,mod:shift,@focus]; [mod:ctrl,@focus] Spellsteal; [mod:shift,@focus] ; [@focus] Counterspell
+END
+
+VER "curse"
+#showtooltip
+/cast [mod:ctrl,@player] Remove Curse; Remove Curse
+END
+
+VER "ele"
+#showtooltip
+/dismount
+/cast [nopet] Icy Veins; Freeze
+END
+
+VER "lance"
+#showtooltip
+/cancelaura Ice Block
+/cancelaura Invisibility
+/cast Ice Lance
+END
+
+VER "mag1"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@arena1] Polymorph(Turtle); [mod:ctrl,mod:shift,@arena1] Deep Freeze; [mod:ctrl,@arena1] Spellsteal; [@arena1] Counterspell
+END
+
+VER "mag2"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@arena2] Polymorph(Turtle); [mod:ctrl,mod:shift,@arena2] Deep Freeze; [mod:ctrl,@arena2] Spellsteal; [@arena2] Counterspell
+END
+
+VER "mag3"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@arena3] Polymorph(Turtle); [mod:ctrl,mod:shift,@arena3] Deep Freeze; [mod:ctrl,@arena3] Spellsteal; [@arena3] Counterspell
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:alt] Azure Water Strider; [mod:ctrl] Magnificent Flying Carpet; [mod:shift] Traveler's Tundra Mammoth; Mechano-Hog
+/dismount [mounted]
+END
+
+VER "ring"
+#showtooltip
+/cast [mod:ctrl,@player] Ring of Frost; [mod:alt,@player] Ring of Fire; [mod:shift] Ring of Fire; Ring of Frost
+END
+
+VER "slow"
+#showtooltip
+/cast [mod:ctrl,@focus] Slow; Slow
+END

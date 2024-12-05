@@ -1,0 +1,146 @@
+VER "pen"
+#showtooltip
+/cast [help,dead] Resurrection; Penance
+END
+
+VER "penP"
+#showtooltip
+/cast [@player] Penance
+END
+
+VER "fhH"
+#showtooltip
+/cast [harm] Mind Blast; Flash Heal
+END
+
+VER "fhP"
+#showtooltip
+/cast [@player] Flash Heal
+END
+
+VER "pwsH"
+#showtooltip
+/cast [harm] Shadow Word: Pain; Power Word: Shield
+END
+
+VER "pwsP"
+#showtooltip
+/cast [@player] Power Word: Shield
+END
+
+VER "ghH
+#showtooltip
+/cast [harm] Devouring Plague; Greater Heal
+END
+
+VER "ghP"
+#showtooltip
+/cast [@player] Greater Heal
+END
+
+VER "renH"
+#showtooltip
+/cast [harm] Smite; Renew
+END
+
+VER "renP"
+#showtooltip
+/cast [@player] Renew
+END
+
+VER "disp"
+#showtooltip
+/cast !Dispersion
+END
+
+VER "fiend"
+#showtooltip
+/cast Shadowfiend
+/petpassive
+/petattack
+END
+
+VER "swp"
+#showtooltip
+/cast Shadow Word: Pain
+/cancelaura Dispersion
+
+VER "flay"
+#showtooltip
+/cast [nochanneling:Mind Flay] Mind Flay
+END
+
+VER "pwlP"
+#showtooltip
+/cast [@player] Power Word: Life
+END
+
+VER "pom"
+#showtooltip
+/cast [mod:ctrl,@player] Prayer of Mending; Prayer of Mending
+END
+
+VER "ps"
+#showtooltip
+/cast [mod:ctrl,@player] Pain Suppression; Pain Suppression
+END
+
+VER "silen"
+#showtooltip
+/cast [mod:ctrl,@focus] Silence; Silence
+END
+
+VER "horr"
+#showtooltip
+/cast [mod:ctrl,@focus] Psychic Horror; Psychic Horror
+END
+
+VER "feath"
+#showtooltip
+/cast [mod:ctrl,@player] Angelic Feather; Angelic Feather
+END
+
+VER "nova"
+#showtooltip
+/cast [mod:ctrl,@player] Power Word: Radiance; [mod:shift] Holy Nova; Power Word: Radiance
+END
+
+VER "dPr1"
+/tar party1
+END
+
+VER "dPr2"
+/tar party2
+END
+
+VER "pi1"
+#showtooltip
+/cast [@party1,exists] Power Infusion; Power Infusion
+END
+
+VER "puri"
+#showtooltip
+/cast [mod:ctrl,@Player] Purify Disease; [harm] Void Eruption; [help] Purify Disease
+END
+
+VER "pws1"
+#showtooltip
+/cast [@party1] Power Word: Shield
+END
+
+VER "pws2"
+#showtooltip
+/cast [@party2] Power Word: Shield
+END
+
+VER "shad"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl] Mind Control; [mod:ctrl,mod:shift] Shackle Undead; [mod:shift] Mindgames; [mod:ctrl] Dispel Magic; Shadow Word: Death
+END
+
+VER "shadF"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@focus] Mind Control; [mod:ctrl,mod:shift,@focus] Shackle Undead ;[mod:shift,@focus] Mindgames; [mod:ctrl,@focus] Dispel Magic; [@focus] Shadow Word: Death
+END

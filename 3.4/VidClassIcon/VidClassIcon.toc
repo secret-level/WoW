@@ -1,0 +1,5 @@
+## Interface: 30400
+
+## Title: VidClassIcon
+## Author: Vid
+VidClassIcon.lua

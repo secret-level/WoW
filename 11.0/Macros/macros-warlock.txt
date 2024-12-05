@@ -1,0 +1,117 @@
+VER "chaos"
+#showtooltip
+/cast [mod:ctrl] Seed of Corruption; Chaos Bolt
+END
+
+VER "haunt"
+#showtooltip Seed of Corruption
+/cast [mod:ctrl] Seed of Corruption; Haunt
+END
+
+VER "coe"
+#showtooltip
+/cast [mod:ctrl,@focus] Curse of Exhaustion; [mod:shift] Shadowfury; Curse of Exhaustion
+END
+
+VER "cot"
+#showtooltip
+/cast [mod:ctrl,@focus] Curse of Tongues; Curse of Tongues
+END
+
+VER "cow"
+#showtooltip
+/cast [mod:ctrl,@focus] Curse of Weakness; Curse of Weakness
+END
+
+VER "dhs"
+#showtooltip Demonic Healthstone
+/cast Soulburn
+/cast Demonic Healthstone
+END
+
+VER "fury"
+#showtooltip
+/cast [mod:ctrl] Shadowburn; [mod:shift] Curse of Agony; [mod:alt] Curse of Doom; Shadowfury
+END
+
+VER "lock1"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@arena1] Fear; [mod:ctrl,mod:shift,@arena1] ; [mod:shift,@arena1] Mortal Coil; [@arena1] Command Demon
+END
+
+VER "lock2"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@arena2] Fear; [mod:ctrl,mod:shift,@arena2] ; [mod:shift,@arena2] Mortal Coil; [@arena2] Command Demon
+END
+
+VER "lock3"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@arena3] Fear; [mod:ctrl,mod:shift,@arena3] ; [mod:shift,@arena3] Mortal Coil; [@arena3] Command Demon
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:alt] Swift Red Wind Rider; [mod:ctrl] Expedition Bloodswarmer; [mod:shift] Traveler's Tundra Mammoth; Primal Flamesaber
+/dismount [mounted]
+END
+
+VER "pet1"
+#showtooltip
+/cast [pet:imp,@party1] Fire Shield
+/cast [pet:felhunter,@party1] Devour Magic
+/cast [pet:voidwalker] Suffering
+/cast [pet:felguard] Metamorphosis
+END
+
+VER "pet2"
+#showtooltip
+/cast [pet:imp,@party2] Fire Shield
+/cast [pet:felhunter,@party2] Devour Magic
+/cast [pet:voidwalker] Suffering
+/cast [pet:felguard] Metamorphosis
+END
+
+VER "petP"
+#showtooltip
+/cast [pet:imp,@player] Fire Shield
+/cast [pet:felhunter,@player] Devour Magic
+/cast [pet:voidwalker] Consume Shadows
+/cast [pet:succubus] Soothing Kiss
+/cast [pet:felguard] Demonic Empowerment
+END
+
+VER "pets"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Summon Infernal; [mod:ctrl,mod:shift] Summon Felguard; [mod:Shift] Summon Imp; [mod:ctrl] Summon Sayaad; [mod:alt] Summon Voidwalker; Summon Felhunter
+END
+
+VER "port"
+#showtooltip
+/cast [mod:ctrl] Demonic Circle(Summon); [mod:shift] Soulburn; Demonic Circle: Teleport
+/cast [mod:shift] Demonic Circle: Teleport
+/ping [@player]
+/stopmacro [nomod:ctrl]
+/wm [@cursor] 3
+/p {rt3} my Demonic Circle here {rt3}
+END
+
+VER "ward"
+#showtooltip
+/cast [known:Nether Ward] Nether Ward; [known:Call Observer] Call Observer
+END
+
+VER "rain"
+#showtooltip
+/cast [mod:ctrl] Hellfire; [mod:shift] Curse of Weakness; [mod:alt,@focus] Curse of Weakness; Rain of Fire
+END
+
+VER "ua"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Fear; [mod:ctrl,mod:shift] Banish; [mod:ctrl] Devour Magic; [mod:shift] Mortal Coil; Command Demon
+END
+
+VER "uaF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Fear; [mod:ctrl,mod:shift,@focus] Banish; [mod:ctrl,@focus] Devour Magic; [mod:shift,@focus] Mortal Coil; [@focus] Command Demon
+END

@@ -1,0 +1,147 @@
+VER "tToT"
+/run TargetFrameToT:ClearAllPoints()TargetFrameToT:SetPoint("CENTER",UIParent,"CENTER",260,-200)TargetFrameToT.SetPoint=function()end
+END
+
+VER "fToT"
+/run FocusFrameToT:ClearAllPoints()FocusFrameToT:SetPoint("CENTER",UIParent,"CENTER",460,-120)FocusFrameToT.SetPoint=function()end
+END
+
+VER "quest"
+/dump C_QuestLog.IsQuestFlaggedCompleted(44326)
+END
+
+VER 3 "scTrack"
+/console minimapTrackingShowAll 1
+END
+
+VER "plate"
+/console ShowClassColorInFriendlyNameplate 0
+END
+
+VER "tMark"
+/tar x
+/script SetRaidTarget("target", 8)
+END
+
+VER "pMark"
+/script SetRaidTarget("xxx", 2)
+/script SetRaidTarget("yyy", 5)
+/script SetRaidTarget("player", 4)
+/promote xxx
+END
+
+VER "mous"
+/focus [target=mouseover,exists][exists]
+/stopmacro [target=mouseover,exists][exists]
+/clearfocus
+END
+
+VER "petA"
+/petpassive
+/petattack
+END
+
+VER "petM"
+/petmoveto
+END
+
+VER "petP"
+#showtooltip
+/petpassive
+/petfollow
+END
+
+VER "hs"
+#showtooltip
+/use Healthstone
+END
+
+VER "ns"
+#showtooltip 13
+/cast Nature's Swiftness
+/cast Healing Surge
+/cast Regrowth
+END
+
+VER "nsp"
+#showtooltip 13
+/cast Nature's Swiftness
+/cast [@player] Healing Surge
+/cast [@player] Regrowth
+END
+
+VER "hs1"
+#showtooltip Regrowth
+/cast [@party1] Healing Surge
+/cast [@party1] Regrowth
+/cast [@party1] Vivify
+/cast [@party1] Flash of Light
+/cast [@party1] Singe Magic
+END
+
+VER "hs2"
+#showtooltip Regrowth
+/cast [@party2] Healing Surge
+/cast [@party2] Regrowth
+/cast [@party2] Vivify
+/cast [@party2] Flash of Light
+/cast [@party2] Singe Magic
+END
+
+VER "hsPet"
+#showtooltip
+/cast [@party1-pet] Healing Surge
+/cast [@party1-pet] Regrowth
+/cast [@party1-pet] Vivify
+/cast [@party1-pet] Flash of Light
+END
+
+VER "rej1"
+#showtooltip
+/cast [@party1] Rejuvenation
+/cast [@party1] Earth Shield
+/cast [@party1] Word of Glory
+/cast [@party1] Power Word: Shield
+END
+
+VER "rej2"
+#showtooltip
+/cast [@party2] Rejuvenation
+/cast [@party2] Earth Shield
+/cast [@party2] Word of Glory
+/cast [@party2] Power Word: Shield
+END
+
+VER "tForm"
+/cast !Mount Form
+/cast !Ghost Wolf
+END
+
+VER "taunt"
+#showtooltip
+/cast [@arenapet1] Provoke
+/cast [@arenapet2] Provoke
+/cast [@arenapet3] Provoke
+END
+
+VER "nitro"
+#showtooltip
+/use 6
+END
+
+VER "glide"
+#showtooltip
+/use 15
+END
+
+VER "trin1"
+#showtooltip 13
+/cast Blood Fury
+/use [mod:ctrl,@player] 13; 13
+END
+
+VER "trin2"
+#showtooltip 14
+/cast Blood Fury
+/use [mod:ctrl,@player] 14; 14
+END

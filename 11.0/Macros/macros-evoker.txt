@@ -1,0 +1,19 @@
+VER  "lfP"
+#showtooltip
+/cast [@player] Living Flame
+END
+
+VER "punge"
+#showtooltip
+/cast [mod:ctrl,@player] Expunge; Expunge
+END
+
+VER "que"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Sleep Walk; [mod:ctrl,mod:shift] ; [mod:shift] ; [mod:ctrl] ; Quell
+END
+
+VER "queF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Sleep Walk; [mod:ctrl,mod:shift,@focus] ; [mod:shift,@focus] ; [mod:ctrl,@focus] ; [@focus] Quell
+END

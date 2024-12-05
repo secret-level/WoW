@@ -1,0 +1,77 @@
+VER "back"
+#showtooltip
+/cast [nostance] Backstab; Shadowstrike
+/startattack [nostance]
+END
+
+VER "muti"
+#showtooltip
+/cast Mutilate
+/startattack
+END
+
+VER "dism"
+#showtooltip
+/cast [mod:ctrl,@focus] Dismantle; [mod:shift;@focus] Pistol Shot; Dismantle
+END
+
+VER "kick"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Blind; [mod:ctrl,mod:shift] Gouge; [mod:shift,target=party1] Shadowstep; [mod:ctrl,target=mouseover,exists] Shadowstep; [mod:ctrl] Shadowstep; Kick
+END
+
+VER "kickF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Blind; [mod:ctrl,mod:shift,@focus] Gouge; [mod:shift,target=party2] Shadowstep; [mod:ctrl,@focus] Shadowstep; [@focus] Kick
+END
+
+VER "mount"
+#showtooltip
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth;[mod:ctrl] Turbo-Charged Flying Machine; [mod:alt] Azure Water Strider; [mod:shift] Traveler's Tundra Mammoth; Fossilized Raptor
+/dismount [mounted]
+END
+
+VER  "prowl"
+#showtooltip
+/cast [nomod] !Stealth
+/cancelaura [mod:ctrl] Stealth
+END
+
+VER "rog1"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@arena1] Blind; [mod:ctrl,mod:shift,@arena1] Gouge; [mod:shift,@arena1] Dismantle; [mod:ctrl,@arena1] Sap; [@arena1] Kick
+END
+
+VER "rog2"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@arena2] Blind; [mod:ctrl,mod:shift,@arena2] Gouge; [mod:shift,@arena2] Dismantle; [mod:ctrl,@arena2] Sap; [@arena2] Kick
+END
+
+VER "rog3"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@arena3] Blind; [mod:ctrl,mod:shift,@arena3] Gouge; [mod:shift,@arena3] Dismantle; [mod:ctrl,@arena3] Sap; [@arena3] Kick
+END
+
+VER "saaap"
+#showtooltip
+/cast [mod:ctrl] Slice and Dice
+/stopmacro [mod:ctrl]
+/cleartarget
+/targetenemy
+/cast Sap
+END
+
+VER "sap"
+#showtooltip
+/cast [mod:ctrl,@focus] Sap; Sap
+END
+
+VER "shiv"
+#showtooltip
+/cast [mod:ctrl,@focus] Shiv; Shiv
+END
+
+VER "tot1"
+#showtooltip
+/cast [@party1] Tricks of the Trade 
+END

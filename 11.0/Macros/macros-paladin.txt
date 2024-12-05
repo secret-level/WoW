@@ -1,0 +1,104 @@
+VER "crus"
+#showtooltip
+/cast Crusader Strike
+/startattack
+/cancelaura Hand of Protection
+END
+
+VER "templ"
+#showtooltip
+/cast Templar's Verdict
+/startattack
+END
+
+VER "shP"
+#showtooltip
+/cast [@player] Holy Shock
+END
+
+VER "folH"
+#showtooltip
+/cast [harm] Shield of the Righteous; Flash of Light
+END
+
+VER "folP"
+#showtooltip
+/cast [@player] Flash of Light
+END
+
+VER "wogH"
+#showtooltip
+/cast [harm] Crusader Strike; Word of Glory
+END
+
+VER "wogP"
+#showtooltip
+/cast [@player] Word of Glory
+END
+
+VER "hlH"
+#showtooltip
+/cast [harm] Shield of the Righteous; Holy Light
+END
+
+VER "hlP"
+#showtooltip
+/cast [@player] Holy Light
+END
+
+VER "beacP"
+#showtooltip
+/cast [@player] Beacon of Light
+END
+
+VER "bofH"
+#showtooltip
+/cast [mod:ctrl,@player] Barrier of Faith; [harm] Crusade Strike; Barrier of Faith
+END
+
+VER "clean"
+#showtooltip
+/cast [mod:ctrl,@player] Cleanse; [harm] Hammer of Wrath; Cleanse
+END
+
+VER "dPal1"
+/target [nomod] party1
+/cast [mod:ctrl,@party1] Cleanse
+END
+
+VER "dPal2"
+/target [nomod] party2
+/cast [mod:ctrl,@party2] Cleanse
+END
+
+VER "free"
+#showtooltip
+/cast [@mouseover,help][mod:shift,@party1][mod:alt,@party2][mod:ctrl,@player][] Blessing of Freedom
+END
+
+VER "sac"
+#showtooltip
+/cast [@mouseover,help][mod:shift,@party1][mod:alt,@party2][mod:ctrl,@player][] Blessing of Sacrifice
+END
+
+VER "bop"
+#showtooltip
+/cast [@mouseover,help][mod:shift,@party1][mod:alt,@party2][mod:ctrl,@player][] Blessing of Protection
+END
+
+VER "judg"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Repentance; [mod:ctrl,mod:shift] Hammer of Justice; [mod:ctrl] Judgment; [mod:Shift] ; Rebuke
+END
+
+VER "judgF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Repentance; [mod:ctrl,mod:shift,@focus] Hammer of Justice; [mod:ctrl,@focus] Judgment;[mod:shift,@focus] ; [@focus] Rebuke
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:alt] Swift Red Wind Rider; [mod:ctrl] Argent Hippogryph; [mod:shift] Traveler's Tundra Mammoth; Summon Thalassian Charger
+/dismount [mounted]
+END

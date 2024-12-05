@@ -1,0 +1,201 @@
+VER "palm"
+#showtooltip
+/cast Tiger Palm
+/startattack
+
+VER "bok"
+#showtooltip
+/cast Blackout Kick
+/startattack
+END
+
+VER "rsk"
+#showtooltip
+/cast Rising Sun Kick
+/startattack
+END
+
+VER "sootH"
+#showtooltip
+/cast [harm] Tiger Palm; Soothing Mist
+END
+
+VER "sootP"
+#showtooltip
+/cast [@player] Soothing Mist
+END
+
+VER "enveH"
+#showtooltip
+/cast [harm] Blackout Kick; Enveloping Mist
+END
+
+VER "enveP"
+#showtooltip
+/cast [@player] Enveloping Mist
+END
+
+VER "reneH"
+#showtooltip
+/cast [harm] Rising Sun Kick; Renewing Mist
+END
+
+VER "reneP"
+#showtooltip
+/cast [@player] Renewing Mist
+END
+
+VER "viviH"
+#showtooltip
+/cast [harm,nochanneling:Crackling Jade Lightning] Crackling Jade Lightning; [help] Vivify
+END
+
+VER "viviP"
+#showtooltip
+/cast [@player] Vivify
+END
+
+VER "coon"
+#showtooltip Life Cocoon
+/cast Blood Fury
+/use 13
+/cast [mod:ctrl,@player] Life Cocoon; Life Cocoon
+END
+
+VER "crack"
+#showtooltip
+/cast [nochanneling:Crackling Jade Lightning] Crackling Jade Lightning
+END
+
+VER "detox"
+#showtooltip
+/cast [mod:ctrl,@player] Detox; [harm] Touch of Death; Detox
+/use Bubble Wand
+END
+
+VER "jade"
+#showtooltip
+/cast [mod:ctrl] Blood Fury
+/use [mod:ctrl] 13
+/cast [mod:ctrl,known:Revival] Revival; [mod:ctrl,known:Restoral] Restoral; [mod:shift] Grapple Weapon; [mod:alt,@focus] Grapple Weapon; [@cursor] Summon Jade Serpent Statue
+END
+
+VER "lust"
+#showtooltip
+/cast [mod:ctrl,@player] Tiger's Lust; [mod:shift] Essence Font; Tiger's Lust
+END
+
+VER "zenP"
+#showtooltip
+/cast [@player] Zen Spheres
+END
+
+VER "mD1"
+/target [nomod] party1
+/target [mod:ctrl] party1-pet
+/cast [mod:shift,@party1] Detox
+/cast [mod:alt,@party1-pet] Detox
+END
+
+VER "mD2"
+/target [nomod] party2
+/target [mod:ctrl] party2-pet
+/cast [mod:shift,@party2] Detox
+/cast [mod:alt,@party2-pet] Detox
+END
+
+VER "walk"
+#showtooltip
+/cast [mod:alt,mod:ctrl] ; [mod:ctrl,mod:shift] Paralysis; [mod:shift] Gunpowder Charge; [mod:ctrl] Roll; [target=mouseover,exists][exists] Mistwalk
+END
+
+VER "mw"
+#showtooltip
+/cast [mod:alt,mod:ctrl] ; [mod:ctrl,mod:shift] Paralysis; [mod:shift] Clash; [mod:ctrl] Roll; Spear Hand Strike
+END
+
+VER "mwF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] ; [mod:ctrl,mod:shift,@focus] Paralysis; [mod:shift,@focus] Clash; [mod:ctrl,@] Roll; [@focus] Spear Hand Strike
+END
+
+VER "oxPro"
+#showtooltip
+/target Black Ox Statue
+/cast Provoke
+/targetlasttarget
+END
+
+VER "peace"
+#showtooltip
+/cast [mod:ctrl,@player] Ring of Peace; [mod:shift] Leg Sweep; [known:Ring of Peace] Ring of Peace; Song of Chi-Ji
+END
+
+VER "stag"
+/run MonkStaggerBar:ClearAllPoints() MonkStaggerBar:SetPoint("CENTER",UIParent,"CENTER",0, -160)
+/run MonkStaggerBar.SetPoint = function() end
+END
+
+VER "tft"
+#showtooltip Fortifying Brew
+/castsequence reset=1 Thunder Focus Tea, Null
+END
+
+VER "trans"
+#showtooltip
+/cast [mod:ctrl] Transcendence; Transcendence: Transfer
+END
+
+VER "ww"
+#showtooltip
+/cast [mod:alt,mod:ctrl] ; [mod:ctrl,mod:shift] Paralysis; [mod:shift] ; [mod:ctrl] Roll; Spear Hand Strike
+END
+
+VER "wwF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] ; [mod:ctrl,mod:shift,@focus] Paralysis; [mod:shift,@focus] ; [mod:ctrl] Roll; [@focus] Spear Hand Strike
+END
+
+VER "mon1"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena1] Paralysis; [mod:alt,mod:ctrl,@arena1] Zen Spheres; [mod:shift,@arena1] Grapple Weapon; [mod:ctrl,@arena1] Crackling Jade Lightning; [@arena1] Spear Hand Strike
+END
+
+VER "mon2"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena2] Paralysis; [mod:alt,mod:ctrl,@arena2] Zen Spheres; [mod:shift,@arena2] Grapple Weapon; [mod:ctrl,@arena2] Crackling Jade Lightning; [@arena2] Spear Hand Strike
+END
+
+VER "mon3"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena3] Paralysis; [mod:alt,mod:ctrl,@arena3] Zen Spheres; [mod:shift,@arena3] Grapple Weapon; [mod:ctrl,@arena3] Crackling Jade Lightning; [@arena3] Spear Hand Strike
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:ctrl] Red Flying Cloud; [mod:alt] Azure Water Strider; [mod:shift] Traveler's Tundra Mammoth; Blonde Riding Yak
+/dismount [mounted]
+END
+
+VER "xuen"
+#showtooltip
+/cast [known:123904] Invoke Xuen, the White Tiger; [known:132578] Invoke Niuzao, the Black Ox
+/petpassive
+/petattack
+/stopmacro [nomod]
+/petfollow
+/stopmacro [nomod:shift]
+/petmoveto
+END
+
+VER "ox"
+#showtooltip
+/petpassive
+/petattack
+/cast Invoke Niuzao, the Black Ox
+/stopmacro [nomod]
+/petfollow
+/stopmacro [nomod:shift]
+/petmoveto
+END

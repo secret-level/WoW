@@ -1,0 +1,97 @@
+VER "obli"
+#showtooltip
+/cast Obliterate
+/startattack
+END
+
+VER "blast"
+#showtooltip
+/cast Howling Blast
+/startattack
+END
+
+VER "frstr"
+#showtooltip
+/cast Frost Strike
+/startattack
+END
+
+VER "scour"
+#showtooltip
+/cast Scourge Strike
+/startattack
+END
+
+VER "coil"
+#showtooltip
+/cast [target=mouseover,exists] Death Coil; Death Coil
+END
+
+VER "dk1"
+/cast [mod:ctrl,mod:shift,@arena1] Death Grip; [mod:alt,mod:ctrl,@arena1] Asphyxiate; [@arena1] Mind Freeze
+END
+
+VER "dk2"
+/cast [mod:ctrl,mod:shift,@arena2] Death Grip; [mod:alt,mod:ctrl,@arena2] Asphyxiate; [@arena2] Mind Freeze
+END
+
+VER "dk3"
+/cast [mod:ctrl,mod:shift,@arena3] Death Grip; [mod:alt,mod:ctrl,@arena3] Asphyxiate; [@arena3] Mind Freeze
+END
+
+VER "ghoul"
+#showtooltip
+/cast [mod:ctrl] Summon Gargoyle; [mod:shift] Death Pact;  [mod:alt] Sacrificial Pact; [nopet] Raise Dead; Dark Transformation
+/use [mod:ctrl] 13
+END
+
+VER "gnaw"
+#showtooltip
+/cast [mod:ctrl,@focus] Gnaw; Gnaw
+END
+
+VER "leap"
+#showtooltip
+/cast [mod:ctrl,@focus] Leap; Leap
+END
+
+VER "mind"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Asphyxiate; [mod:ctrl,mod:shift] Death Grip; [mod:ctrl] Chains of Ice; Mind Freeze
+END
+
+VER "mindF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Asphyxiate; [mod:ctrl,mod:shift,@focus] Death Grip; [mod:ctrl,@focus] Chains of Ice; [@focus] Mind Freeze
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:ctrl] Winged Steed of the Ebon Blade; [mod:alt] Azure Water Strider; [mod:shift] Traveler's Tundra Mammoth; Acherus Deathcharger
+/dismount [mounted]
+END
+
+VER "simu"
+#showtooltip
+/cast [mod:ctrl,@focus] Dark Simulacrum; Dark Simulacrum
+END
+
+VER "walk"
+#showtooltip
+/cast !Wraith Walk
+END
+
+VER "sindr"
+#showtooltip Breath of Sindragosa
+/cast Pillar of Frost
+/use 13
+/cast !Breath of Sindragosa
+END
+
+VER "wyrm"
+#showtooltip Frostwyrm's Fury
+/cast Pillar of Frost
+/use 13
+/cast Frostwyrm's Fury
+END

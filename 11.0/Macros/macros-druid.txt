@@ -1,0 +1,227 @@
+VER "mang"
+#showtooltip
+/cast Mangle
+/startattack
+END
+
+VER "shred"
+#showtooltip
+/cast Shred
+/startattack [nostealth]
+END
+
+VER "rake"
+#showtooltip
+/stopattack [stealth]
+/cast Rake
+/stopattack [stealth]
+/startattack [nostealth] 
+END
+
+VER "swipe"
+#showtooltip
+/cast Swipe
+/startattack
+END
+
+VER "thrash"
+#showtooltip
+/cast Thrash
+/startattack
+END
+
+VER "bear"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena1] Entangling Roots; [mod:alt,mod:ctrl,@arena1] Cyclone; [mod:shift,@arena1] Skull Bash; !Bear Form
+END
+
+VER "boom"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena2] Entangling Roots; [mod:alt,mod:ctrl,@arena2] Cyclone; [mod:shift,@arena2] Skull Bash; !Moonkin Form
+END
+
+VER "tree"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena2] Entangling Roots; [mod:alt,mod:ctrl,@arena2] Cyclone; [mod:shift,@arena2] Skull Bash; !Incarnation: Tree of Life
+END
+
+VER "cat"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena3] Entangling Roots; [mod:alt,mod:ctrl,@arena3] Cyclone; [mod:shift,@arena3] Skull Bash; !Cat Form
+END
+
+VER "bash"
+#showtooltip
+/cast [mod:ctrl,@focus] Mighty Bash; [mod:shift] ; [mod:alt] Tranquility; Mighty Bash
+END
+
+VER "skb"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Cyclone; [mod:ctrl,mod:shift] Entangling Roots; [mod:shift] Faerie Fire; [mod:ctrl,target=mouseover,exists] Wild Charge; [mod:ctrl] Wild Charge; Skull Bash
+END
+
+VER "skbF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Cyclone;[mod:ctrl,mod:shift,@focus] Entangling Roots; [mod:shift,@focus] Faerie Fire; [mod:ctrl,@focus] Wild Charge; [@focus] Skull Bash
+END
+
+VER "wild"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Cyclone; [mod:ctrl,mod:shift] Entangling Roots; [mod:shift] Faerie Swarm; [mod:ctrl,target=mouseover,exists] Wild Charge; [mod:ctrl] Wild Charge; Wild Growth
+END
+
+VER 3 "wildF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Cyclone;[mod:ctrl,mod:shift,@focus] Entangling Roots; [mod:shift,@focus] Faerie Swarm; [mod:ctrl,@focus] Wild Charge; [@player] Wild Growth
+END
+
+VER "beam"
+#showtooltip
+/cast [mod:alt,mod:ctrl] Cyclone; [mod:ctrl,mod:shift] Entangling Roots; [mod:shift] Faerie Swarm; [mod:ctrl,target=mouseover,exists] Wild Charge; [mod:ctrl] Wild Charge; Solar Beam
+END
+
+VER "beamF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] Cyclone; [mod:ctrl,mod:shift,@focus] Entangling Roots; [mod:shift,@focus] Faerie Swarm; [mod:ctrl,@focus] Wild Charge; [@focus] Solar Beam
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cancelform [nomod,noform:4]
+/cast [mod:ctrl,mod:shift] Grand Black War Mammoth; [mod:ctrl] !Travel Form; [mod:alt] Azure Water Strider; [mod:shift] Traveler's Tundra Mammoth; Raven Lord
+/dismount [mounted]
+END
+
+VER "rejH"
+#showtooltip
+/cast [harm] Starfire; Rejuvenation
+END
+
+VER "rejP"
+#showtooltip
+/cast [@player] Rejuvenation
+END
+
+VER "regH"
+#showtooltip
+/cast [harm] Wrath; Regrowth
+END
+
+VER "regP"
+#showtooltip
+/cast [@player] Regrowth
+END
+
+VER "blooH"
+#showtooltip
+/cast [harm] Moonfire; Lifebloom
+END
+
+VER "blooP"
+#showtooltip
+/cast [@player] Lifebloom
+END
+
+VER "cure"
+#showtooltip
+/cast [mod:ctrl,@player] Nature's Cure; Nature's Cure
+/cast Bubble Wand
+END
+
+VER "corr"
+#showtooltip
+/cast [mod:ctrl,@player] Remove Corruption; Remove Corruption
+/cast Bubble Wand
+END
+
+VER "Swift"
+#showtooltip
+/cast [@player] Swiftmend
+END
+
+VER "wardP"
+#showtooltip
+/cast [@player] Cenarion Ward
+END
+
+VER "overP"
+#showtooltip
+/cast [@player] Overgrowth
+END
+
+VER "iron"
+#showtooltip
+/cast [mod:ctrl,@player] Ironbark; [mod:shift] ; [mod:alt,@player] ; Ironbark
+END
+
+VER "disD1"
+/target [nomod] party1; [mod:ctrl] party1-pet
+/cast [mod:shift,@party1] Remove Corruption;[mod:alt,@party1-pet] Remove Corruption
+END
+
+VER "disD2"
+/target [nomod] party2; [mod:ctrl] party2-pet
+/cast [mod:shift,@party2] Remove Corruption;[mod:alt,@party2-pet] Remove Corruption
+END
+
+VER  "efflo"
+#showtooltip
+/cast [mod:ctrl] Grove Guardians; [mod:shift] Innervate; [mod:alt,@player] Innervate; [@cursor] Efflorescence
+END
+
+VER "hiber"
+#showtooltip
+/cast [mod:ctrl,@focus] Hibernate; [mod:shift] Moonfire; [mod:alt,@focus]; Hibernate
+END
+
+VER "jump"
+#showtooltip
+/cancelform
+/tar party1
+/cast Wild Charge
+/targetlasttarget
+END
+
+VER "maimF"
+#showtooltip
+/cast [@focus] Maim
+END
+
+VER "mass"
+#showtooltip
+/cast [mod:ctrl,@focus] Mass Entanglement; [mod:shift] ; [mod:alt] Tranquility; Mass Entanglement
+END
+
+VER "mush"
+#showtooltip
+/cast [mod:ctrl] Wild Mushroom; [mod:shift] Innervate; [mod:alt,@player] Innervate; [@cursor] Force of Nature
+END
+
+VER "prowl"
+#showtooltip
+/cast [nomod,noform:2] !Cat Form
+/cast [nomod] !Prowl
+/cancelaura [mod:ctrl] Prowl
+END
+
+VER "rakeH"
+#showtooltip
+/cast [harm] Rake; Lifebloom
+END
+
+VER "shreH"
+#showtooltip
+/cast [harm] Shred; Rejuvenation
+END
+
+VER "vort"
+#showtooltip
+/cast [mod:shift] ; [mod:ctrl] Typhoon; [mod:alt] ; Ursol's Vortex
+END
+
+VER "zerk"
+#showtooltip
+/cast Berserk
+/use 13
+/use 11

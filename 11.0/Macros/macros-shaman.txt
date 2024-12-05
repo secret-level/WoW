@@ -1,0 +1,179 @@
+VER "storm"
+#showtooltip
+/cast Stormstrike
+/startattack
+/equipset [equipped:Shield] PvP Enhance
+END
+
+VER "lash"
+#showtooltip
+/cast Lava Lash
+/startattack
+END
+
+VER "ripH"
+#showtooltip
+/cast [harm] Flame Shock; Riptide
+END
+
+VER "ritP"
+#showtooltip
+/cast [@player] Riptide
+END
+
+VER "surgH"
+#showtooltip
+/cast [harm] Frost Shock; Healing Surge
+END
+
+VER "surgP"
+#showtooltip
+/cast [@player] Healing Surge
+END
+
+VER "chH"
+#showtooltip
+/cast [harm] Earth Shock; Chain Heal
+/cancelaura Burrow
+END
+
+VER "chP"
+#showtooltip
+/cast [@player] Chain Heal
+END
+
+VER "ueH"
+#showtooltip
+/cast [harm] Primal Strike; Unleash Life
+/cancelaura Burrow
+END
+
+VER  "ueP"
+#showtooltip
+/cast [@player] Unleash Life
+END
+
+VER "hwH"
+#showtooltip
+/cast [harm] Lightning Bolt; Healing Wave
+END
+
+VER "hwP"
+#showtooltip
+/cast [@player] Healing Wave
+END
+
+VER "esP"
+#showtooltip
+/cast [@player] Earth Shield
+END
+
+VER "asc"
+#showtooltip
+/cast Ascendance
+/cast Ancestral Guidance
+/cast Blood Fury
+/use 13
+END
+
+VER "burr"
+#showtooltip
+/cast !Burrow
+END
+
+VER "chain"
+#showtooltip
+/cast [harm] Chain Lightning; Water Walking
+END
+
+VER "curse"
+#showtooltip
+/cast [mod:ctrl,@player] Cleanse Spirit; [harm] Lava Burst; Cleanse Spirit
+/use Bubble Wand
+END
+
+VER "diS1"
+/target [nomod] party1
+/target [mod:ctrl] party1-pet
+/cast [mod:shift,@party1] Cleanse Spirit
+/cast [mod:alt,@party1-pet] Cleanse Spirit
+END
+
+VER "diS2"
+/target [nomod] party2
+/target [mod:ctrl] party2-pet
+/cast [mod:shift,@party2] Cleanse Spirit
+/cast [mod:alt,@party2-pet] Cleanse Spirit
+END
+
+VER "grT"
+#showtooltip
+/stopcasting
+/cast [known:Grounding Totem] Grounding Totem; [known:Counterstrike Totem] Counterstrike Totem
+END
+
+VER "bindT" 
+#showtooltip
+/cast [mod:shift] 6; [mod:ctrl] Earthbind Totem; [mod:alt] Healing Rain; [@cursor] Totemic Projection
+END
+
+VER "bindP"
+#showtooltip Stone Bulwark Totem
+/cast [@player] Earthbind Totem
+END
+
+VER "linkT"
+#showtooltip
+/cast [mod:shift] ; [mod:ctrl,@player] Spirit Link Totem; [mod:alt] ; Spirit Link Totem
+END
+
+VER "wallT"
+#showtooltip
+/cast [mod:shift]Healing Stream Totem;[mod:ctrl]Capacitor Totem;[mod:alt]Healing Tide Totem;[@cursor]Earthen Wall Totem
+/stopmacro [mod]
+/wm [@cursor] 2
+/run SendChatMessage("{rt4} "..C_Spell.GetSpellLink(198838).." UP {rt4}","party")
+END
+
+VER "sh1"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@arena1] Hex; [mod:ctrl,mod:shift,@arena1] Frost Shock; [mod:shift,@arena1] Flame Shock; [mod:ctrl,@arena1] Lava Burst; [@arena1] Wind Shear
+END
+
+VER "sh2"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@arena2] Hex; [mod:ctrl,mod:shift,@arena2] Frost Shock; [mod:shift,@arena2] Flame Shock; [mod:ctrl,@arena2] Lava Burst; [@arena2] Wind Shear
+END
+
+VER "sh3"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@arena3] Hex; [mod:ctrl,mod:shift,@arena3] Frost Shock; [mod:shift,@arena3] Flame Shock; [mod:ctrl,@arena3] Lava Burst; [@arena3] Wind Shear
+END
+
+VER "sh"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl] Hex; [mod:ctrl,mod:shift] Frost Shock; [mod:alt] Earth Elemental; [mod:shift] Lightning Lasso; [mod:ctrl] Greater Purge; Wind Shear
+END
+
+VER "shF"
+#showtooltip
+/stopcasting [nomod]
+/cast [mod:alt,mod:ctrl,@focus] Hex; [mod:ctrl,mod:shift,@focus] Frost Shock; [mod:alt] Fire Elemental; [mod:shift,@focus] Lightning Lasso; [mod:ctrl,@focus] Greater Purge; [@focus] Wind Shear
+END
+
+VER "thunP"
+#showtooltip Burrow
+/cast [@player] Thunderstorm
+END
+
+VER "mount"
+#showtooltip
+/cancelform
+/stopcasting
+/cast [mod:ctrl,mod:shift] Grand Black War Mammoth; [mod:alt] Swift Red Wind Rider; [mod:ctrl] Dread Gladiator's Proto-Drake; [mod:shift] Traveler's Tundra Mammoth; Ultramarine Qiraji Battle Tank
+/dismount [mounted]
+END

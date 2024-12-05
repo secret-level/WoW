@@ -1,0 +1,64 @@
+VER "bite"
+#showtooltip
+/cast Demon's Bite
+/startattack
+END
+
+VER "blade"
+#showtooltip
+/cast Felblade
+/startattack
+END
+
+VER "dh1"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena1] Imprison; [mod:alt,mod:ctrl,@arena1] ; [mod:shift,@arena1] Throw Glaive; [@arena1] Disrupt
+END
+
+VER "dh2"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena2] Imprison; [mod:alt,mod:ctrl,@arena2] ; [mod:shift,@arena2] Throw Glaive; [@arena1] Disrupt
+END
+
+VER "dh3"
+#showtooltip
+/cast [mod:ctrl,mod:shift,@arena3] Imprison; [mod:alt,mod:ctrl,@arena3] ; [mod:shift,@arena3] Throw Glaive; [@arena1] Disrupt
+END
+
+VER "erupt"
+#showtooltip
+/cast [mod:ctrl,@focus] Fel Eruption; Fel Eruption
+END
+
+VER "glaiF"
+#showtooltip
+/cast [@focus] Throw Glaive
+END
+
+VER "hav"
+#showtooltip
+/cast [mod:alt,mod:ctrl] ; [mod:ctrl,mod:shift] Imprison; [mod:shift] ; [mod:ctrl] Consume Magic; Disrupt
+END
+
+
+VER "havF"
+#showtooltip
+/cast [mod:alt,mod:ctrl,@focus] ; [mod:ctrl,mod:shift,@focus] Imprison; [mod:shift,@focus] ; [mod:ctrl] Consume Magic; [@focus] Disrupt
+END
+
+VER "mount"
+#showtooltip
+/stopcasting
+/cast [mod:ctrl, mod:shift] Grand Black War Mammoth; [mod:alt] Swift Red Wind Rider; [mod:ctrl] Sunreaver Dragonhawk; [mod:shift] Traveler's Tundra Mammoth; Swift Razzashi Raptor
+/dismount [mounted]
+END
+
+VER "sof"
+#showtooltip
+/cast [mod:ctrl,@player] Sigil of Flame; Sigil of Flame
+END
+
+VER "som"
+#showtooltip
+/cast [mod:ctrl,@player] Sigil of Misery; Sigil of Misery
+END
