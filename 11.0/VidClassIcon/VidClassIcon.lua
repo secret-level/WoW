@@ -29,13 +29,13 @@ hooksecurefunc("UnitFramePortrait_Update", function(self)
                     self.portrait:SetTexCoord(0,1,0,1)
                     isInForm = true               
                 elseif formId == 27 then -- Swift Flight Form
-                  SetPortraitToTexture(self.portrait, "Interface\\ICONS\\Ability_Druid_FlightForm")
-                  self.portrait:SetTexCoord(0, 1, 0, 1)
-                  isInForm = true
+                    SetPortraitToTexture(self.portrait, "Interface\\ICONS\\Ability_Druid_FlightForm")
+                    self.portrait:SetTexCoord(0, 1, 0, 1)
+                    isInForm = true
                 elseif formId == 4 then -- Aquatic Form
-                  SetPortraitToTexture(self.portrait, "Interface\\ICONS\\Ability_Druid_AquaticForm")
-                  self.portrait:SetTexCoord(0, 1, 0, 1)
-                  isInForm = true
+                    SetPortraitToTexture(self.portrait, "Interface\\ICONS\\Ability_Druid_AquaticForm")
+                    self.portrait:SetTexCoord(0, 1, 0, 1)
+                    isInForm = true
                 end
             else -- checking non-"player" for form buffs
                 local i = 1
